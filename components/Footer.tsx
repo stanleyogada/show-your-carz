@@ -7,13 +7,16 @@ const Footer = () => (
   <footer className="flex flex-col text-black-100  mt-5 border-t border-gray-100">
     <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
       <div className="flex flex-col justify-start items-start gap-6">
-        <Image
-          src="/logo.svg"
-          alt="logo"
-          width={118}
-          height={18}
-          className="object-contain"
-        />
+        <div className="flex justify-center items-center text-[20px] font-bold bg-white rounded-full min-w-[130px] p-3 shadow-[0_35px_60px_-15px_rgb(0, 0, 0)]">
+          <Image
+            src="/steering-wheel.svg"
+            width={20}
+            height={20}
+            alt="steering wheel"
+          />
+          <span className="ml-2 text-[#5d5fc0] font-bold">ShowYourCarz</span>
+        </div>
+
         <p className="text-base text-gray-700">
           show-your-carz 2023 <br />
           All Rights Reserved &copy;

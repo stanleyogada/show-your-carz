@@ -43,7 +43,7 @@
 }
 
 .hero__title {
-  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+  @apply 2xl:text-[62px] sm:text-[64px] text-[50px] font-extrabold;
 }
 
 .hero__subtitle {
@@ -59,7 +59,9 @@
 }
 
 .hero__image-overlay {
-  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+  @apply absolute xl:-top-24 xl:-left-1/2 -left-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+  transform: rotateY(180deg);
+  filter: drop-shadow(16px 16px 20px rgb(197, 255, 202)) invert(100%) blur(400px);
 }
 /* END: Hero styles */
 
@@ -89,6 +91,11 @@
 /* START: Car Card styles */
 .car-card {
   @apply flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl;
+  transition: all 0.3s ease-in-out;
+}
+
+.car-card:hover {
+  transform: scale(1.025);
 }
 
 .car-card__content {
@@ -143,6 +150,7 @@
 
 .car-details__main-image {
   @apply relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg;
+  /* filter: drop-shadow(16px 16px 20px rgb(197, 255, 202)) invert(100%); */
 }
 /* END: Car Details styles */
 
