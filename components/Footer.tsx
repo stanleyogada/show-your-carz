@@ -44,7 +44,19 @@ const Footer = () => (
     </div>
 
     <div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10">
-      <p>@2023 show-your-carz. All rights reserved</p>
+      <p>
+        Made with{" "}
+        <span role="img" aria-label="love">
+          ❤️
+        </span>{" "}
+        by{" "}
+        <Link
+          href="https://www.linkedin.com/in/stanley-ogada/"
+          className="text-blue-500 underline"
+        >
+          Stanley Ogada (RichCode)
+        </Link>
+      </p>
 
       <div className="footer__copyrights-link">
         <Link href="/" className="text-gray-500">
